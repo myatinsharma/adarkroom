@@ -147,12 +147,6 @@
         .click(() => Engine.toggleVolume())
         .appendTo(menu);
 
-      // $('<span>')
-      //   .addClass('appStore menuBtn')
-      //   .text(_('get the app.'))
-      //   .click(Engine.getApp)
-      //   .appendTo(menu);
-
       $("<span>")
         .addClass("lightsOff menuBtn")
         .text(_("lights off."))
@@ -171,12 +165,6 @@
         .click(Engine.confirmDelete)
         .appendTo(menu);
 
-      // $('<span>')
-      //   .addClass('menuBtn')
-      //   .text(_('share.'))
-      //   .click(Engine.share)
-      //   .appendTo(menu);
-
       $("<span>")
         .addClass("menuBtn")
         .text(_("save."))
@@ -194,7 +182,7 @@
       }
 
       $("<span>")
-        .addClass("menuBtn")
+        .addClass("menuBtn gitLink")
         .text(_("github."))
         .click(function () {
           window.open("https://github.com/myatinsharma/adarkroom");
